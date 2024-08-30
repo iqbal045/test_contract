@@ -21,4 +21,4 @@ COPY . .
 EXPOSE 8545
 
 # Start Ganache and deploy the contract
-CMD ganache-cli -h 0.0.0.0 & sleep 5 && npx hardhat run scripts/deploy.js --network localhost && tail -f /dev/null
+CMD ganache-cli -h 0.0.0.0 & sleep 5 && npx hardhat run deploy.js --network localhost && tail -f /dev/null
