@@ -21,4 +21,4 @@ EXPOSE 8545
 EXPOSE 3000
 
 # Start Ganache and the Node.js application
-CMD ganache-cli -h 0.0.0.0 & npx hardhat run deploy.js --network localhost && npm run dev
+CMD ganache-cli -h 0.0.0.0
